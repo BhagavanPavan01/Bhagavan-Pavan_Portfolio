@@ -1,0 +1,285 @@
+/* General Styles */
+body {
+    background: #0d1117;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    background: transparent;
+    padding: 15px;
+}
+
+.navhome {
+    font-weight: bold; /* Makes the text bold */
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+
+}
+
+.navbar-nav .nav-link {
+    color: white;
+    margin-right: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: cyan;
+}
+
+/* Hero Section */
+.hero-section {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    animation: fadeInUp 1s;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    animation: fadeInUp 1.2s;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: cyan;
+    animation: fadeInUp 1.4s;
+}
+
+p {
+    font-size: 1rem;
+    animation: fadeInUp 1.6s;
+}
+
+/* Social Icons */
+.social-icons {
+    margin: 15px 0;
+    animation: fadeInUp 1.8s;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: cyan;
+    transform: scale(1.2);
+}
+
+/* Button */
+.btn-primary {
+    background: cyan;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: white;
+    color: rgb(0, 0, 0);
+}
+
+/* Profile Image - Hexagonal Design */
+/* .profile-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background: linear-gradient(45deg, cyan, blue);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    padding: 10px;
+    animation: fadeInUp 2s;
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+} */
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* .profile-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    background: linear-gradient(45deg, cyan, blue);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    padding: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7), 
+                0px 0px 30px rgba(0, 255, 255, 0.5);
+    animation: glow 1.5s infinite alternate;
+} */
+
+@keyframes glow {
+    0% {
+        box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7), 
+                    0px 0px 30px rgba(0, 255, 255, 0.5);
+    }
+    100% {
+        box-shadow: 0px 0px 25px rgba(0, 255, 255, 1), 
+                    0px 0px 50px rgba(0, 255, 255, 0.8);
+    }
+}
+
+
+body {
+    background: radial-gradient(circle at center, #0d1117, #0a0f1a);
+    color: white;
+    animation: backgroundGlow 5s infinite alternate;
+}
+
+@keyframes backgroundGlow {
+    0% {
+        background: radial-gradient(circle at center, #0d1117, #0a0f1a);
+    }
+    100% {
+        background: radial-gradient(circle at center, #0d1117, #0a192f);
+    }
+}
+
+
+.contact {
+    padding: 50px 0;
+}
+
+.contact-icon {
+    font-size: 2rem;
+    color: white;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: scale(1.3);
+    color: cyan;
+}
+
+
+/* .profile-container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    animation: float 3s ease-in-out infinite;
+} */
+
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Profile Border (Animated Circle) */
+.profile-border {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: colorChange 3s infinite linear, bounce 2s infinite ease-in-out;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 300px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* Border Color Changing Animation */
+@keyframes colorChange {
+    0% { box-shadow: 0 0 10px #ff5733; }
+    25% { box-shadow: 0 0 10px #33ff57; }
+    50% { box-shadow: 0 0 10px #3357ff; }
+    75% { box-shadow: 0 0 10px #ff33aa; }
+    100% { box-shadow: 0 0 10px #ff5733; }
+}
+
+/* Bouncing Effect */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Profile Border (Animated Circle) */
+.profile-border {
+    width: 420px;
+    height: 300px;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: colorChange 3s infinite linear, bounce 2s infinite ease-in-out;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 400px;
+    height: 280px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+/* Border Color Changing Animation */
+@keyframes colorChange {
+    0% { box-shadow: 0 0 20px #ff5733; }
+    25% { box-shadow: 0 0 20px #33ff57; }
+    50% { box-shadow: 0 0 20px #3357ff; }
+    75% { box-shadow: 0 0 20px #ff33aa; }
+    100% { box-shadow: 0 0 20px #ff5733; }
+}
+
+/* Bouncing Effect */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Apply Animation */
+.profile-border {
+    animation: colorChange 3s infinite linear, bounce 2s infinite ease-in-out;
+}
+
+
