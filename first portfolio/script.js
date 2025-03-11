@@ -18,6 +18,22 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
+// Project section-------------------------------------------------------------------
+document.querySelectorAll(".project-card").forEach(card => {
+    card.addEventListener("click", () => {
+        const link = card.querySelector(".project-link").getAttribute("href");
+        if (link) {
+            window.open(link, "_blank");
+        }
+    });
+});
 
 
-
+var typed = new Typed("#typing-text", {
+    strings: ["AND I'm a Frontend Developer.", "AND I'm a Graphic Designer."],
+    typeSpeed: 50,
+    backSpeed: 25,
+    backDelay: 1000,
+    loop: true
+  });
+  

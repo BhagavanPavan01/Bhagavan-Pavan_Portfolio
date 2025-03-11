@@ -7,7 +7,8 @@ body {
 
 /* Navbar */
 .navbar {
-    background: transparent;
+    /* background: transparent; */
+    background: #091425;
     padding: 15px;
 }
 
@@ -31,6 +32,37 @@ body {
     color: cyan;
 }
 
+/* Navbar Logo */
+.navbar-logo {
+    width: 40px;  /* Adjust size */
+    height: 40px; /* Keep it circular */
+    border-radius: 50%;
+    object-fit: cover; /* Ensures it remains circular */
+    margin-right: 10px; /* Spacing between logo and text */
+}
+
+
+/* company-name------- */
+
+.company-name {
+    font-size: 1.5rem; /* Default size */
+    font-weight: bold;
+    white-space: nowrap; /* Prevents breaking */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+    .company-name {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .company-name {
+        font-size: 1rem;
+    }
+}
+
 /* Hero Section */
 .hero-section {
     display: flex;
@@ -51,7 +83,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.9rem;
     color: cyan;
     animation: fadeInUp 1.4s;
 }
@@ -81,7 +113,7 @@ p {
 
 /* Button */
 .btn-primary {
-    background: cyan;
+    background: rgb(20, 121, 47);
     border: none;
     padding: 10px 20px;
     font-size: 18px;
@@ -285,4 +317,171 @@ body {
 .certifications{
     padding: 50px;
 }
+
+
+
+
+
+/* Projects Section------------------------------------------------------------------------------ */
+
+
+
+
+.projects-section {
+    padding: 60px 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Project Card */
+.project-card {
+    background: #080625;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+/* Hover Effect */
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Heading */
+.project-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Card Description */
+.project-card p {
+    font-size: 16px;
+    color: #b8adad;
+}
+
+/* Project Link */
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Grid */
+@media (max-width: 992px) {
+    .col-lg-3 {
+        width: 50%; /* 2 cards per row */
+    }
+}
+
+@media (max-width: 576px) {
+    .col-lg-3 {
+        width: 100%; /* 1 card per row */
+    }
+}
+
+
+
+
+
+/* Profile Container */
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    position: relative;
+}
+
+/* Profile Border (Animated Circle) */
+.profile-border {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: colorChange 3s infinite linear, bounce 2s infinite ease-in-out;
+}
+
+/* Profile Image */
+.profile-img {
+    width: 340px;
+    height: 340px;
+    border-radius: 50%;
+    border: 3px solid white;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+/* Border Color Changing Animation */
+@keyframes colorChange {
+    0% { box-shadow: 0 0 20px #ff5733; }
+    25% { box-shadow: 0 0 20px #33ff57; }
+    50% { box-shadow: 0 0 20px #3357ff; }
+    75% { box-shadow: 0 0 20px #ff33aa; }
+    100% { box-shadow: 0 0 20px #ff5733; }
+}
+
+/* Bouncing Effect */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Responsive Image Resizing */
+@media (max-width: 992px) {
+    .profile-border {
+        width: 270px;
+        height: 270px;
+    }
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-border {
+        width: 220px;
+        height: 220px;
+    }
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-border {
+        width: 190px;
+        height: 190px;
+    }
+    .profile-img {
+        width: 170px;
+        height: 170px;
+    }
+}
+
 
