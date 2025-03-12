@@ -485,3 +485,61 @@ body {
 }
 
 
+
+/* Skill section -------------------- */
+
+
+
+body {
+    background-color: #121826;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.skill-card {
+    background: #2a2f3a;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.skill-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.skill-description {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.stars i {
+    color: gold;
+}
+
+.stars i.gray {
+    color: gray;
+}
+
+.stars i {
+    color: #FFD700; /* Gold color for stars */
+    font-size: 16px;
+}
+
+.stars i.gray {
+    color: #555; /* Dark gray for unfilled stars */
+}
+
+
