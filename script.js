@@ -57,7 +57,40 @@ const skills = [
     // { name: 'Cloud Practitioner', icon: 'fab fa-aws', rating: 2, description: 'Basic cloud knowledge and AWS services.' }
 ];
 
+// const skillsContainer = document.getElementById('skills-container');
+// skills.forEach(skill => {
+//     let stars = '<div class="stars">';
+//     for (let i = 0; i < 5; i++) {
+//         stars += `<i class="fas fa-star ${i < skill.rating ? '' : 'gray'}"></i>`;
+//     }
+//     stars += '</div>';
+
+//     skillsContainer.innerHTML += `
+//         <div class="col-md-3 col-sm-6">
+//             <div class="skill-card p-3">
+//                 <i class="${skill.icon} skill-icon"></i>
+//                 <div class="skill-title">${skill.name}</div>
+//                 <div class="skill-description">${skill.description}</div>
+//                 ${stars}
+//             </div>
+//         </div>`;
+// });
+
+// skillsContainer.innerHTML += `
+//     <div class="col-md-3 col-sm-6">
+//         <div class="skill-card p-3">
+//             <i class="${skill.icon} skill-icon"></i>
+//             <div class="skill-title">${skill.name}</div>
+//             <div class="skill-description">${skill.description}</div>
+//             ${stars}
+//         </div>
+//     </div>`;
+// // Refresh FontAwesome
+// window.FontAwesome && FontAwesome.dom.i2svg();
+
+
 const skillsContainer = document.getElementById('skills-container');
+
 skills.forEach(skill => {
     let stars = '<div class="stars">';
     for (let i = 0; i < 5; i++) {
@@ -75,6 +108,9 @@ skills.forEach(skill => {
             </div>
         </div>`;
 });
+
+// Force FontAwesome to refresh the icons
+window.FontAwesome && FontAwesome.dom.i2svg();
 
 
 

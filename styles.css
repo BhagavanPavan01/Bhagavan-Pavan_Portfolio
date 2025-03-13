@@ -184,7 +184,7 @@ p {
 body {
     background: radial-gradient(circle at center, #0d1117, #0a0f1a);
     color: white;
-    animation: backgroundGlow 5s infinite alternate;
+    animation: backgroundGlow 15s infinite alternate;
 }
 
 @keyframes backgroundGlow {
@@ -199,6 +199,7 @@ body {
 
 .contact {
     padding: 50px 0;
+    background-color: #1b2431;
 }
 
 .contact-icon {
@@ -382,6 +383,11 @@ body {
     text-decoration: underline;
 }
 
+.project-image {
+    border-radius: 20px;
+    border-color: #ddd;
+}
+
 /* Responsive Grid */
 @media (max-width: 992px) {
     .col-lg-3 {
@@ -533,13 +539,85 @@ body {
     color: gray;
 }
 
+
 .stars i {
-    color: #FFD700; /* Gold color for stars */
+    color: #FFD700 !important; /* Ensure Gold color applies */
     font-size: 16px;
 }
-
 .stars i.gray {
-    color: #555; /* Dark gray for unfilled stars */
+    color: #555 !important; /* Dark gray for unfilled stars */
 }
 
 
+
+
+
+
+/* General Styling */
+
+/* About Section */
+.about-section {
+    background-color: #1b2431;
+    padding: 60px 0;
+    text-align: left;
+    border-radius: 10px;
+}
+
+
+/* About Image */
+.about-img {
+    width: 250px;
+    height: 250px;
+    border: 5px solid #FFD700;
+    box-shadow: 0 4px 10px rgba(255, 215, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-img:hover {
+    transform: scale(1.05);
+}
+
+/* About Info */
+.about-info {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+.about-info i {
+    color: #00ff48;
+    margin-right: 10px;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    display: inline-block;
+    font-size: 22px;
+    color: #1ae01a;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #ffffff;
+}
+
+/* Hire Me Button */
+.btn-primary {
+    background-color: #00ff48;
+    color: #121826;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ffcc00;
+    color: #000;
+}
