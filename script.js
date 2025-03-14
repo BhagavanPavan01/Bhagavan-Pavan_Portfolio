@@ -89,28 +89,56 @@ const skills = [
 // window.FontAwesome && FontAwesome.dom.i2svg();
 
 
-const skillsContainer = document.getElementById('skills-container');
+// const skillsContainer = document.getElementById('skills-container');
 
-skills.forEach(skill => {
-    let stars = '<div class="stars">';
-    for (let i = 0; i < 5; i++) {
-        stars += `<i class="fas fa-star ${i < skill.rating ? '' : 'gray'}"></i>`;
-    }
-    stars += '</div>';
+// skills.forEach(skill => {
+//     let stars = '<div class="stars">';
+//     for (let i = 0; i < 5; i++) {
+//         stars += `<i class="fas fa-star ${i < skill.rating ? '' : 'gray'}"></i>`;
+//     }
+//     stars += '</div>';
 
-    skillsContainer.innerHTML += `
-        <div class="col-md-3 col-sm-6">
-            <div class="skill-card p-3">
-                <i class="${skill.icon} skill-icon"></i>
-                <div class="skill-title">${skill.name}</div>
-                <div class="skill-description">${skill.description}</div>
-                ${stars}
-            </div>
-        </div>`;
-});
+//     skillsContainer.innerHTML += `
+//         <div class="col-md-3 col-sm-6">
+//             <div class="skill-card p-3">
+//                 <i class="${skill.icon} skill-icon"></i>
+//                 <div class="skill-title">${skill.name}</div>
+//                 <div class="skill-description">${skill.description}</div>
+//                 ${stars}
+//             </div>
+//         </div>`;
+// });
 
 // Force FontAwesome to refresh the icons
 window.FontAwesome && FontAwesome.dom.i2svg();
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const skillsContainer = document.getElementById("skills-container");
+
+    if (skillsContainer) {
+        let skillsHTML = "";
+        skills.forEach((skill) => {
+            let stars = "";
+            for (let i = 0; i < 5; i++) {
+                stars += `<i class="fas fa-star ${i < skill.rating ? 'gold-star' : 'gray-star'}"></i>`;
+            }
+
+            skillsHTML += `
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card p-3">
+                        <i class="${skill.icon} skill-icon"></i>
+                        <div class="skill-title">${skill.name}</div>
+                        <div class="skill-description">${skill.description}</div>
+                        <div class="stars">${stars}</div>
+                    </div>
+                </div>`;
+        });
+
+        skillsContainer.innerHTML = skillsHTML;
+    }
+});
+
 
 
 

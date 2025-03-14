@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* General Styles */
 body {
     background: #0d1117;
@@ -8,7 +12,7 @@ body {
 /* Navbar */
 .navbar {
     /* background: transparent; */
-    background: #091425;
+    background: #0a1a34;
     padding: 15px;
 }
 
@@ -620,4 +624,18 @@ body {
 .btn-primary:hover {
     background-color: #ffcc00;
     color: #000;
+}
+
+
+.stars i {
+    font-size: 18px;
+    margin-right: 2px;
+}
+
+.gold-star {
+    color: gold !important;
+}
+
+.gray-star {
+    color: #ccc !important;
 }
