@@ -14,6 +14,11 @@ body {
     /* background: transparent; */
     background: #0a1a34;
     padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navhome {
@@ -46,6 +51,17 @@ body {
 }
 
 
+
+.nav-links li { margin: 0 15px; }
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+
+
 /* company-name------- */
 
 .company-name {
@@ -54,6 +70,9 @@ body {
     white-space: nowrap; /* Prevents breaking */
 }
 
+.company-name:hover{
+    color: #00ffff;
+}
 /* Adjust for smaller screens */
 @media (max-width: 768px) {
     .company-name {
@@ -88,6 +107,11 @@ h2 {
 
 h3 {
     font-size: 1.9rem;
+    color: cyan;
+    animation: fadeInUp 1.4s;
+}
+h4 {
+    font-size: 1.4rem;
     color: cyan;
     animation: fadeInUp 1.4s;
 }
@@ -291,7 +315,7 @@ body {
     animation: colorChange 3s infinite linear, bounce 2s infinite ease-in-out;
 }
 
-/* Profile Image */
+/* Profile Image============================================ */
 .profile-img {
     width: 380px;
     height: 380px;
@@ -325,10 +349,7 @@ body {
 
 
 
-
-
 /* Projects Section------------------------------------------------------------------------------ */
-
 
 
 
@@ -638,4 +659,124 @@ body {
 
 .gray-star {
     color: #ccc !important;
+}
+
+
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff9800;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #2922e6;
+}
+
+/* Firefox Support */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #120075 #1e1e1e;
+}
+
+section {
+    scroll-margin-top: 80px; /* Adjust based on your navbar height */
+  }
+
+ 
+  
+/* certifications============================ */
+
+.certficate-link{
+    text-decoration: none; /* Removes the underline */
+    color: #ffffff; /* Change text color */
+}
+
+/* Change color on hover */
+.certficate-link:hover {
+    color: #3922e6; /* New color when hovered */
+}
+
+
+/* Certifications Section */
+#certifications {
+    text-align: center;
+    padding: 50px 20px;
+    background: 1b2431;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Certification Card Grid */
+.cert-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Certification Card */
+.cert-card {
+    background: #060439;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Certification Images */
+.cert-card img {
+    width: 160px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Certification Button */
+.cert-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    background: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.cert-btn:hover {
+    background: #e67e22;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .cert-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .cert-container {
+        grid-template-columns: repeat(1, 1fr); /* 1 card per row */
+    }
 }
