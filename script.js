@@ -54,6 +54,7 @@ const skills = [
     { name: 'GitHub', icon: 'fab fa-github', rating: 4, description: 'Platform for version control,deployment and collaboration.' },
     { name: 'VS Code', icon: 'fas fa-code', rating: 4, description: 'Popular code editor for multiple Programming languages.' },
     { name: 'SQL', icon: 'fas fa-database', rating: 2, description: 'Language for storing and managing relational databases.' },
+    { name: 'Java', icon: 'fab fa-java', rating: 3, description: ' A high-level, object-oriented programming language designed for general-purpose coding.'},
     // { name: 'Cloud Practitioner', icon: 'fab fa-aws', rating: 2, description: 'Basic cloud knowledge and AWS services.' }
 ];
 
@@ -138,4 +139,7 @@ document.addEventListener("DOMContentLoaded", function () {
         skillsContainer.innerHTML = skillsHTML;
     }
 });
+
+
+
 
