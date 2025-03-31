@@ -55,6 +55,11 @@ const skills = [
     { name: 'VS Code', icon: 'fas fa-code', rating: 4, description: 'Popular code editor for multiple Programming languages.' },
     { name: 'SQL', icon: 'fas fa-database', rating: 2, description: 'Language for storing and managing relational databases.' },
     { name: 'Java', icon: 'fab fa-java', rating: 3, description: ' A high-level, object-oriented programming language designed for general-purpose coding.'},
+    { name: 'Photography', icon: 'fas fa-camera', rating: 5, description: 'Capturing moments with creativity and precision, bringing stories to life through the lens.'}
+    
+    
+    
+      
     // { name: 'Cloud Practitioner', icon: 'fab fa-aws', rating: 2, description: 'Basic cloud knowledge and AWS services.' }
 ];
 
@@ -114,10 +119,39 @@ const skills = [
 window.FontAwesome && FontAwesome.dom.i2svg();
 
 
+// document.addEventListener("DOMContentLoaded", function () {
+//     const skillsContainer = document.getElementById("skills-container");
+
+//     if (skillsContainer) {
+//         let skillsHTML = "";
+//         skills.forEach((skill) => {
+//             let stars = "";
+//             for (let i = 0; i < 5; i++) {
+//                 stars += `<i class="fas fa-star ${i < skill.rating ? 'gold-star' : 'gray-star'}"></i>`;
+//             }
+
+//             skillsHTML += `
+//                 <div class="col-md-3 col-sm-6">
+//                     <div class="skill-card p-3">
+//                         <i class="${skill.icon} skill-icon"></i>
+//                         <div class="skill-title">${skill.name}</div>
+//                         <div class="skill-description">${skill.description}</div>
+//                         <div class="stars">${stars}</div>
+//                     </div>
+//                 </div>`;
+//         });
+
+//         skillsContainer.innerHTML = skillsHTML;
+//     }
+// });
+
+
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const skillsContainer = document.getElementById("skills-container");
 
-    if (skillsContainer) {
+    function renderSkills() {
         let skillsHTML = "";
         skills.forEach((skill) => {
             let stars = "";
@@ -138,7 +172,23 @@ document.addEventListener("DOMContentLoaded", function () {
 
         skillsContainer.innerHTML = skillsHTML;
     }
+
+    // Initial Render
+    renderSkills();
+
+    // Function to Add a New Skill
+    document.getElementById("addSkillBtn").addEventListener("click", function () {
+        // Example: Adding EDIUS X and Adobe Premiere Pro skills dynamically
+        skills.push(
+            { name: 'EDIUS X', icon: 'fas fa-film', rating: 4, description: 'Professional video editing software for fast workflows.' },
+            { name: 'Adobe Premiere Pro', icon: 'fas fa-video', rating: 5, description: 'Industry-standard video editing software for creatives.' }
+        );
+
+        // Re-render Skills
+        renderSkills();
+    });
 });
+
 
 
 
