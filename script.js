@@ -55,95 +55,13 @@ const skills = [
     { name: 'VS Code', icon: 'fas fa-code', rating: 4, description: 'Popular code editor for multiple Programming languages.' },
     { name: 'SQL', icon: 'fas fa-database', rating: 2, description: 'Language for storing and managing relational databases.' },
     { name: 'Java', icon: 'fab fa-java', rating: 3, description: ' A high-level, object-oriented programming language designed for general-purpose coding.'},
-    { name: 'Photography', icon: 'fas fa-camera', rating: 5, description: 'Capturing moments with creativity and precision, bringing stories to life through the lens.'}
+    { name: 'Photography', icon: 'fas fa-camera', rating: 5, description: 'Capturing moments with creativity and precision, bringing stories to life through the lens.'} ]
     
     
-    
-      
-    // { name: 'Cloud Practitioner', icon: 'fab fa-aws', rating: 2, description: 'Basic cloud knowledge and AWS services.' }
-];
 
-// const skillsContainer = document.getElementById('skills-container');
-// skills.forEach(skill => {
-//     let stars = '<div class="stars">';
-//     for (let i = 0; i < 5; i++) {
-//         stars += `<i class="fas fa-star ${i < skill.rating ? '' : 'gray'}"></i>`;
-//     }
-//     stars += '</div>';
-
-//     skillsContainer.innerHTML += `
-//         <div class="col-md-3 col-sm-6">
-//             <div class="skill-card p-3">
-//                 <i class="${skill.icon} skill-icon"></i>
-//                 <div class="skill-title">${skill.name}</div>
-//                 <div class="skill-description">${skill.description}</div>
-//                 ${stars}
-//             </div>
-//         </div>`;
-// });
-
-// skillsContainer.innerHTML += `
-//     <div class="col-md-3 col-sm-6">
-//         <div class="skill-card p-3">
-//             <i class="${skill.icon} skill-icon"></i>
-//             <div class="skill-title">${skill.name}</div>
-//             <div class="skill-description">${skill.description}</div>
-//             ${stars}
-//         </div>
-//     </div>`;
-// // Refresh FontAwesome
-// window.FontAwesome && FontAwesome.dom.i2svg();
-
-
-// const skillsContainer = document.getElementById('skills-container');
-
-// skills.forEach(skill => {
-//     let stars = '<div class="stars">';
-//     for (let i = 0; i < 5; i++) {
-//         stars += `<i class="fas fa-star ${i < skill.rating ? '' : 'gray'}"></i>`;
-//     }
-//     stars += '</div>';
-
-//     skillsContainer.innerHTML += `
-//         <div class="col-md-3 col-sm-6">
-//             <div class="skill-card p-3">
-//                 <i class="${skill.icon} skill-icon"></i>
-//                 <div class="skill-title">${skill.name}</div>
-//                 <div class="skill-description">${skill.description}</div>
-//                 ${stars}
-//             </div>
-//         </div>`;
-// });
 
 // Force FontAwesome to refresh the icons
 window.FontAwesome && FontAwesome.dom.i2svg();
-
-
-// document.addEventListener("DOMContentLoaded", function () {
-//     const skillsContainer = document.getElementById("skills-container");
-
-//     if (skillsContainer) {
-//         let skillsHTML = "";
-//         skills.forEach((skill) => {
-//             let stars = "";
-//             for (let i = 0; i < 5; i++) {
-//                 stars += `<i class="fas fa-star ${i < skill.rating ? 'gold-star' : 'gray-star'}"></i>`;
-//             }
-
-//             skillsHTML += `
-//                 <div class="col-md-3 col-sm-6">
-//                     <div class="skill-card p-3">
-//                         <i class="${skill.icon} skill-icon"></i>
-//                         <div class="skill-title">${skill.name}</div>
-//                         <div class="skill-description">${skill.description}</div>
-//                         <div class="stars">${stars}</div>
-//                     </div>
-//                 </div>`;
-//         });
-
-//         skillsContainer.innerHTML = skillsHTML;
-//     }
-// });
 
 
 
@@ -191,6 +109,68 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// --------------------------Skill Section----------------------
+
+
+// Auto-update copyright year
+document.getElementById('year').textContent = new Date().getFullYear();
+  
+// Smooth scrolling for footer links
+document.querySelectorAll('.footer-links a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    document.querySelector(this.getAttribute('href')).scrollIntoView({
+      behavior: 'smooth'
+    });
+  });
+});
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+            const bubblesContainer = document.getElementById('bubbles');
+            const bubbleCount = 20;
+            
+            // Create bubbles
+            for (let i = 0; i < bubbleCount; i++) {
+                createBubble(bubblesContainer);
+            }
+            
+            // Add new bubbles periodically
+            setInterval(() => {
+                createBubble(bubblesContainer);
+            }, 1000);
+            
+            function createBubble(container) {
+                const bubble = document.createElement('div');
+                bubble.classList.add('bubble');
+                
+                // Random properties
+                const size = Math.random() * 60 + 20; // 20px to 80px
+                const posX = Math.random() * 100;
+                const duration = Math.random() * 20 + 10; // 10s to 30s
+                const delay = Math.random() * 5;
+                const opacity = Math.random() * 0.5 + 0.1;
+                const blur = Math.random() * 5;
+                
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+                bubble.style.left = `${posX}%`;
+                bubble.style.bottom = `-${size}px`;
+                bubble.style.animationDuration = `${duration}s`;
+                bubble.style.animationDelay = `${delay}s`;
+                bubble.style.opacity = opacity;
+                bubble.style.filter = `blur(${blur}px)`;
+                
+                // Random color variation
+                const hue = Math.random() * 30 + 250; // Purple/pink range
+                bubble.style.backgroundColor = `hsla(${hue}, 80%, 70%, ${opacity})`;
+                
+                container.appendChild(bubble);
+                
+                // Remove bubble after animation completes
+                setTimeout(() => {
+                    bubble.remove();
+                }, duration * 1000);
+            }
+        });
