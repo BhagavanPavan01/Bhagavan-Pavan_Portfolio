@@ -53,8 +53,10 @@ const skills = [
     { name: 'Python', icon: 'fab fa-python', rating: 3, description: 'High-level programming language for general-purpose coding.' },
     { name: 'GitHub', icon: 'fab fa-github', rating: 4, description: 'Platform for version control,deployment and collaboration.' },
     { name: 'VS Code', icon: 'fas fa-code', rating: 4, description: 'Popular code editor for multiple Programming languages.' },
-    { name: 'SQL', icon: 'fas fa-database', rating: 2, description: 'Language for storing and managing relational databases.' },
+    { name: 'SQL', icon: 'fas fa-database', rating: 3, description: 'Language for storing and managing relational databases.' },
     { name: 'Java', icon: 'fab fa-java', rating: 3, description: ' A high-level, object-oriented programming language designed for general-purpose coding.'},
+    { name: 'EDIUS X', icon: 'fa-solid fa-video', rating: 4, description: 'Professional video editing software for fast workflows and classic effects.' },  
+    { name: 'Adobe Premiere Pro', icon: 'fas fa-film', rating: 3, description: 'Industry-standard video editing software for high-quality productions.' }, 
     { name: 'Photography', icon: 'fas fa-camera', rating: 5, description: 'Capturing moments with creativity and precision, bringing stories to life through the lens.'} ]
     
     
