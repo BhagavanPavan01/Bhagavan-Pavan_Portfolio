@@ -999,4 +999,43 @@ h2 {
     background: #0056b3;
     transform: scale(1.1);
   }
-  
+
+/* ------------------------------------------ Project section hidden button----------------------- */
+
+
+
+.hidden-project {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* ----------------------------------------------  Certification section ---------------------------------- */
+
+.hidden-cert {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

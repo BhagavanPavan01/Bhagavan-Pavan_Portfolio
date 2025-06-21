@@ -158,13 +158,14 @@
     </section>
 
 
+
     <!-- Project Section------------------------------------ -->
 
 
     <section class="projects-section" id="Projects">
         <div class="container">
             <h2 class="section-title text-center mb-4">My Projects</h2>
-            <div class="row g-4">
+            <div class="row g-4" id="project-list">
                 <!-- Project 1 -->
                 <div class="col-lg-3 col-md-6 col-sm-12">
                     <div class="project-card">
@@ -254,7 +255,8 @@
                             <img src="https://res.cloudinary.com/decaajhdd/image/upload/v1744983141/Screenshot_2025-04-18_183800_skk55o.png"
                                 alt="Loding" class="col-lg-12 col-md-6 col-sm-12 img-fluid project-image">
                         </div>
-                        <p>Web design, photography, video editing, and creative design all under one roof at BP Creative Company.</p>
+                        <p>Web design, photography, video editing, and creative design all under one roof at BP Creative
+                            Company.</p>
 
                         <a href="https://bp-creatives.netlify.app/" class="project-link">View Project</a>
                     </div>
@@ -269,7 +271,8 @@
                             <img src="https://res.cloudinary.com/decaajhdd/image/upload/v1744565166/Screenshot_2025-04-12_222346_mmyjvk.png"
                                 alt="Loding" class="col-lg-12 col-md-6 col-sm-12 img-fluid project-image">
                         </div>
-                        <p>A responsive video streaming platform, featuring dynamic content sections inspired by Disney+ Hotstar.</p>
+                        <p>A responsive video streaming platform, featuring dynamic content sections inspired by Disney+
+                            Hotstar.</p>
 
                         <a href="https://bpcreative-hotstar.netlify.app/" class="project-link">View Project</a>
                     </div>
@@ -278,9 +281,9 @@
 
 
                 <!-- Project 9 -->
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="col-lg-3 col-md-6 col-sm-12 hidden-project">
                     <div class="project-card">
-                        <h3>BP Creatives</h3>
+                        <h3>JNTU-GV College Attendance System</h3>
                         <div>
                             <img src="https://res.cloudinary.com/decaajhdd/image/upload/v1750001646/Screenshot_2025-06-14_124939_easl98.png"
                                 alt="Loding" class="col-lg-12 col-md-6 col-sm-12 img-fluid project-image">
@@ -293,7 +296,7 @@
 
 
                 <!-- Project 8
-                <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="col-lg-3 col-md-6 col-sm-12 hidden-project">
                     <div class="project-card">
                         <h3>AI Deep Learning Fashion Classifier</h3>
                         <p>A deep learning project that classifies clothing items using MNIST dataset.</p>
@@ -301,6 +304,9 @@
                     </div>
                 </div> -->
 
+            </div>
+            <div class="text-center mt-4">
+                <button id="show-more-btn" class="btn btn-primary">Show More</button>
             </div>
         </div>
     </section>
@@ -364,7 +370,7 @@
 
         <section id="certifications">
             <h2>Certifications</h2>
-            <div class="cert-container">
+            <div class="cert-container" id="cert-list">
                 <div class="cert-card">
                     <img src="https://res.cloudinary.com/decaajhdd/image/upload/v1742043975/202200000661_swayam_cec22-cs20_pages-to-jpg-0001_vnkjoy.jpg"
                         alt="Python Certification">
@@ -429,7 +435,7 @@
                     <a href="https://res.cloudinary.com/decaajhdd/image/upload/v1744982107/HTML-5_page-0001_tspjkr.jpg"
                         class="cert-btn">View Certificate</a>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card hidden-cert">
                     <img src="https://res.cloudinary.com/decaajhdd/image/upload/v1744982124/CSS_Web_Design_page-0001_etagmy.jpg"
                         alt="AI with Python">
                     <h4>CSS</h4>
@@ -437,7 +443,7 @@
                     <a href="https://res.cloudinary.com/decaajhdd/image/upload/v1744982124/CSS_Web_Design_page-0001_etagmy.jpg"
                         class="cert-btn">View Certificate</a>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card hidden-cert">
                     <img src="https://res.cloudinary.com/decaajhdd/image/upload/v1744982136/Creating_Responsive_Web_Pages_using_Bootstrap_4_page-0001_xps0um.jpg"
                         alt="AI with Python">
                     <h4>Bootstrap</h4>
@@ -445,7 +451,7 @@
                     <a href="https://res.cloudinary.com/decaajhdd/image/upload/v1744982136/Creating_Responsive_Web_Pages_using_Bootstrap_4_page-0001_xps0um.jpg"
                         class="cert-btn">View Certificate</a>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card hidden-cert">
                     <img src="https://res.cloudinary.com/decaajhdd/image/upload/v1749744346/JavaScript_page-0001_voyi6e.jpg"
                         alt="AI with Python">
                     <h4>JavaScript</h4>
@@ -453,7 +459,7 @@
                     <a href="https://res.cloudinary.com/decaajhdd/image/upload/v1749744346/JavaScript_page-0001_voyi6e.jpg"
                         class="cert-btn">View Certificate</a>
                 </div>
-                <div class="cert-card">
+                <div class="cert-card hidden-cert">
                     <img src="https://res.cloudinary.com/decaajhdd/image/upload/v1749744644/Java_page-0001_uyjzoz.jpg"
                         alt="AI with Python">
                     <h4>Java</h4>
@@ -461,6 +467,9 @@
                     <a href="https://res.cloudinary.com/decaajhdd/image/upload/v1749744644/Java_page-0001_uyjzoz.jpg"
                         class="cert-btn">View Certificate</a>
                 </div>
+            </div>
+            <div class="text-center mt-4">
+                <button id="show-more-cert" class="btn btn-primary">Show More</button>
             </div>
         </section>
     </section>
@@ -578,11 +587,11 @@
             </div>
         </div>
     </footer>
-    
 
 
-        <!-- Back to Top Button -->
-        <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
 
 
 
