@@ -43,11 +43,12 @@ var typed = new Typed("#typing-text", {
 
 
 const skills = [
-    // { name: 'React', icon: 'fab fa-react', rating: 4, description: 'A JavaScript library for building user interfaces.' },
+    
     { name: 'HTML5', icon: 'fab fa-html5', rating: 5, description: 'The standard markup language for structuring web pages.' },
     { name: 'CSS3', icon: 'fab fa-css3-alt', rating: 4, description: 'A language for styling and formatting web pages.' },
     { name: 'Bootstrap', icon: 'fab fa-bootstrap', rating: 4, description: 'A CSS framework for responsive design and color styling.' },
     { name: 'JavaScript', icon: 'fab fa-js', rating: 4, description: 'A scripting language for dynamic web development.' },
+    { name: 'React', icon: 'fab fa-react', rating: 4, description: 'A JavaScript library for building user interfaces.' },
     { name: 'NodeJs', icon: 'fab fa-node-js', rating: 4, description: 'JavaScript runtime for efficient backend development.' },
     { name: 'ExpressJs', icon: 'fab fa-node', rating: 3, description: 'A lightweight and minimalist web framework for Node.js.' },
     { name: 'Python', icon: 'fab fa-python', rating: 3, description: 'High-level programming language for general-purpose coding.' },
@@ -55,7 +56,7 @@ const skills = [
     { name: 'VS Code', icon: 'fas fa-code', rating: 4, description: 'Popular code editor for multiple Programming languages.' },
     { name: 'SQL', icon: 'fas fa-database', rating: 3, description: 'Language for storing and managing relational databases.' },
     { name: 'Java', icon: 'fab fa-java', rating: 3, description: ' A high-level, OOPs language designed for general-purpose coding.' },
-    { name: 'EDIUS X', icon: 'fa-solid fa-video', rating: 4, description: 'Professional video editing software for fast workflows and classic effects.' },
+    { name: 'EDIUS X', icon: 'fa-solid fa-video', rating: 5, description: 'Professional video editing software for fast workflows and classic effects.' },
     { name: 'Adobe Premiere Pro', icon: 'fas fa-film', rating: 3, description: 'Industry-standard video editing software for high-quality productions.' },
     { name: 'Photography', icon: 'fas fa-camera', rating: 5, description: 'Capturing moments with creativity and bringing stories to life through the lens.' }]
 
