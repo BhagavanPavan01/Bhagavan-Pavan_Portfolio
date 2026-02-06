@@ -424,4 +424,18 @@ function disturbStars(x, y) {
 }
 
 
+
+// =============== Experience section animation
+const experienceCard = document.querySelector('.experience-card');
+
+window.addEventListener('scroll', () => {
+  const position = experienceCard.getBoundingClientRect().top;
+  const screenHeight = window.innerHeight;
+
+  if (position < screenHeight - 100) {
+    experienceCard.classList.add('show');
+  }
+});
+
+
 // ================== Ending Background animationd code =====================

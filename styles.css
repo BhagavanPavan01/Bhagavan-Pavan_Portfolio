@@ -1300,4 +1300,73 @@ h2 {
 }
 
 
+
+/* ===== Experience Section ===== */
+.experience {
+  padding: 80px 20px;
+  background: #17053d4b;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.experience-card {
+  max-width: 800px;
+  margin: auto;
+  background: #12052e;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.6s ease;
+}
+
+.experience-header h3 {
+  font-size: 1.5rem;
+  color: #d0cfcf;
+}
+
+.experience-header span {
+  color: #007bff;
+  font-weight: 600;
+}
+
+.experience-duration {
+  font-size: 0.95rem;
+  color: #e4e4e4;
+  margin: 10px 0;
+}
+
+.experience-desc {
+  margin: 15px 0;
+  line-height: 1.6;
+  color: #e4e4e4;
+}
+
+.experience-points {
+  padding-left: 20px;
+}
+
+.experience-points li {
+  margin-bottom: 8px;
+  color: #e4e4e4;
+}
+
+/* Hover effect */
+.experience-card:hover {
+  transform: translateY(0) scale(1.02);
+}
+
+/* Animation trigger */
+.experience-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
 /* ================== Ending Background animationd code ===================== */
