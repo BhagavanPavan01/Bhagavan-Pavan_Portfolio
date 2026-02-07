@@ -30,7 +30,7 @@ document.querySelectorAll(".project-card").forEach(card => {
 
 
 var typed = new Typed("#typing-text", {
-    strings: ["AND I'm a Frontend Developer.", "AND I'm a Graphic Designer."],
+    strings: ["I'm a Full Stack Developer.", "AND I'm a Graphic Designer."],
     typeSpeed: 50,
     backSpeed: 25,
     backDelay: 1000,
@@ -50,14 +50,17 @@ const skills = [
     { name: 'JavaScript', icon: 'fab fa-js', rating: 4, description: 'A scripting language for dynamic web development.' },
     { name: 'React', icon: 'fab fa-react', rating: 4, description: 'A JavaScript library for building user interfaces.' },
     { name: 'NodeJs', icon: 'fab fa-node-js', rating: 4, description: 'JavaScript runtime for efficient backend development.' },
-    { name: 'ExpressJs', icon: 'fab fa-node', rating: 3, description: 'A lightweight and minimalist web framework for Node.js.' },
+    { name: 'ExpressJs', icon: 'fab fa-node', rating: 4, description: 'A lightweight and minimalist web framework for Node.js.' },
+    { name: 'MongoDB',icon: 'fas fa-database',rating: 5,description: 'A scalable NoSQL database used to store and manage JSON-like documents.'},
     { name: 'Python', icon: 'fab fa-python', rating: 3, description: 'High-level programming language for general-purpose coding.' },
+    { name: 'Artificial Intelligence',icon: 'fas fa-robot',rating: 3,description: 'Building intelligent systems that mimic human thinking,decision-making, and automation.'},
+    { name: 'Machine Learning',icon: 'fas fa-brain',rating: 3,description: 'Enabling systems to learn and improve from data.'},
     { name: 'GitHub', icon: 'fab fa-github', rating: 4, description: 'Platform for version control,deployment and collaboration.' },
     { name: 'VS Code', icon: 'fas fa-code', rating: 4, description: 'Popular code editor for multiple Programming languages.' },
     { name: 'SQL', icon: 'fas fa-database', rating: 3, description: 'Language for storing and managing relational databases.' },
     { name: 'Java', icon: 'fab fa-java', rating: 3, description: ' A high-level, OOPs language designed for general-purpose coding.' },
-    { name: 'EDIUS X', icon: 'fa-solid fa-video', rating: 5, description: 'Professional video editing software for fast workflows and classic effects.' },
-    { name: 'Adobe Premiere Pro', icon: 'fas fa-film', rating: 3, description: 'Industry-standard video editing software for high-quality productions.' },
+    // { name: 'EDIUS X', icon: 'fa-solid fa-video', rating: 5, description: 'Professional video editing software for fast workflows and classic effects.' },
+    // { name: 'Adobe Premiere Pro', icon: 'fas fa-film', rating: 3, description: 'Industry-standard video editing software for high-quality productions.' },
     { name: 'Photography', icon: 'fas fa-camera', rating: 5, description: 'Capturing moments with creativity and bringing stories to life through the lens.' }]
 
 
